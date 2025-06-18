@@ -16,5 +16,20 @@ console.log("Hello! If you see this, the script is working.");
 */
 
 // Try rewriting this without using querySelector
-const header = document.querySelector("#container");
-console.log("header", header);
+// const header = document.querySelector("#container");
+// console.log("header", header);
+
+// 5 - Give the section with an id of container the text "Hello!".
+const container = document.getElementById("container");
+container.innerText = "Hello!"
+
+// 6 - Add the class main to the div with a class of footer.
+const footers = document.getElementsByClassName("footer");
+const footer = [...footers][0];
+footer.classList.add("main");
+
+// 7 - Remove the class main on the div with a class of footer.
+footer.classList.remove("main");
+
+// 12 - Remove the div with a class of footer.
+footer.parentNode.removeChild(footer)
