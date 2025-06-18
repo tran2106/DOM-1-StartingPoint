@@ -18,7 +18,6 @@ console.log("Hello! If you see this, the script is working.");
 // Try rewriting this without using querySelector
 const header = document.getElementById("container");
 console.log("# 1 header", header);
-
 // Using querySelector
 const headerQuery = document.querySelector("#container");
 console.log("# 2 headerQuery", headerQuery);
@@ -28,6 +27,15 @@ console.log("# 3 secondClassItems", secondClassItems);
 //select all using with third class/inside ol tag
 const thirdClassItems = document.querySelector("ol .third");
 console.log("# 4 thirdClassItems", thirdClassItems);
+// 5 - Give the section with an id of container the text "Hello!".
+const container = document.getElementById("container");
+container.innerText = "Hello!"
+// 6 - Add the class main to the div with a class of footer.
+const footers = document.getElementsByClassName("footer");
+const footer = [...footers][0];
+footer.classList.add("main");
+// 7 - Remove the class main on the div with a class of footer.
+footer.classList.remove("main");
 // #8 Create a new li element.
 const li = document.createElement('li'); 
 // #9 Give the li the text "four".
@@ -41,5 +49,5 @@ const olLI = ol.querySelectorAll('li');
 olLI.forEach(function (li){
     li.style.backgroundColor = 'green';
 });
-
-
+// 12 - Remove the div with a class of footer.
+footer.parentNode.removeChild(footer)
