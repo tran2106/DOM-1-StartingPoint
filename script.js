@@ -26,4 +26,7 @@ console.log("# 2 headerQuery", headerQuery);
 const secondClassItems = document.getElementsByClassName("second");
 console.log("# 3 secondClassItems", secondClassItems);
 //select all using with third class/inside ol tag
-const thirdClassItems = document.querySelectorAll("ol .third");
+const thirdClassItems = document.querySelector("ol .third");
+console.log("# 4 thirdClassItems", thirdClassItems);
+
+
