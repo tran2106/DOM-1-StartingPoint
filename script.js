@@ -17,4 +17,13 @@ console.log("Hello! If you see this, the script is working.");
 
 // Try rewriting this without using querySelector
 const header = document.getElementById("container");
-console.log("header", header);
+console.log("# 1 header", header);
+
+// Using querySelector
+const headerQuery = document.querySelector("#container");
+console.log("# 2 headerQuery", headerQuery);
+// select all using class name
+const secondClassItems = document.getElementsByClassName("second");
+console.log("# 3 secondClassItems", secondClassItems);
+//select all using with third class/inside ol tag
+const thirdClassItems = document.querySelectorAll("ol .third");
