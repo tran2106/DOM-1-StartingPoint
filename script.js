@@ -18,3 +18,18 @@ console.log("Hello! If you see this, the script is working.");
 // Try rewriting this without using querySelector
 const header = document.querySelector("#container");
 console.log("header", header);
+
+
+// Create a new li element.
+const li = document.createElement('li'); 
+// Give the li the text "four".
+li.textContent = 'four'; 
+// Append the li to the ul element.
+const ul = document.querySelector('ul'); 
+ul.appendChild(li);
+// Loop over all of the lis inside the ol tag and give them a background color of "green".
+const ol = document.querySelector('ol'); 
+const olLI = ol.querySelectorAll('li');
+olLI.forEach(function (li){
+    li.style.backgroundColor = 'green';
+});
