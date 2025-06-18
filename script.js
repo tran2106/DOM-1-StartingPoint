@@ -28,5 +28,18 @@ console.log("# 3 secondClassItems", secondClassItems);
 //select all using with third class/inside ol tag
 const thirdClassItems = document.querySelector("ol .third");
 console.log("# 4 thirdClassItems", thirdClassItems);
+// #8 Create a new li element.
+const li = document.createElement('li'); 
+// #9 Give the li the text "four".
+li.textContent = 'four'; 
+// #10 Append the li to the ul element.
+const ul = document.querySelector('ul'); 
+ul.appendChild(li);
+// #11 Loop over all of the lis inside the ol tag and give them a background color of "green".
+const ol = document.querySelector('ol'); 
+const olLI = ol.querySelectorAll('li');
+olLI.forEach(function (li){
+    li.style.backgroundColor = 'green';
+});
 
 
